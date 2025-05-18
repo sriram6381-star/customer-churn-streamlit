@@ -13,7 +13,7 @@ print("Churn unique values:", df['Churn'].unique())
 categorical = df.select_dtypes(include='object').columns
 df = pd.get_dummies(df, columns=categorical, drop_first=True)
 
-X = df.drop('Churn', axis=1)
+X = df.drop('Churn', axis=1) 
 y = df['Churn']
 
 scaler = StandardScaler()
