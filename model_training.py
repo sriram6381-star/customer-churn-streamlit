@@ -9,7 +9,7 @@ df.columns = df.columns.str.strip()
 
 # Sample preprocessing
 df.dropna(inplace=True)
-df['Churn'] = df['Churn'].map({'Yes': 1, 'No': 0})
+print("Churn unique values:", df['Churn'].unique())
 categorical = df.select_dtypes(include='object').columns
 df = pd.get_dummies(df, columns=categorical, drop_first=True)
 
