@@ -4,7 +4,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 import pickle
 
-df = pd.read_csv('telco_customer..._churn.csv')
+df = pd.read_csv('telco_customer_churn.csv')
 df.columns = df.columns.str.strip()
 
 # Sample preprocessing
